@@ -1,4 +1,4 @@
-using Borzoo.GraphQL;
+using Dabble.GraphQL;
 using Framework;
 using Xunit;
 

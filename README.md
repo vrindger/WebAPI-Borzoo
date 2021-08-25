@@ -1,4 +1,4 @@
-# Borzoo
+# Dabble
 
 A [Zevere GraphQL Web API] implementation in ASP.NET Core C#.
 
@@ -10,16 +10,16 @@ First, clone this repository and run the web app:
 
 ```sh
 # Clone the repository
-git clone https://github.com/Zevere/WebAPI-Borzoo.git
+git clone https://github.com/Zevere/WebAPI-Dabble.git
 
-# Switch to the WebAPI-Borzoo directory
-cd WebAPI-Borzoo
+# Switch to the WebAPI-Dabble directory
+cd WebAPI-Dabble
 
 # Clone dependency projects
 git submodule update --init --recursive
 
 # Run the web project from CLI or an IDE
-dotnet run ./src/Borzoo.Web/Borzoo.Web.csproj
+dotnet run ./src/Dabble.Web/Dabble.Web.csproj
 ```
 
 After running the web app, hit [http://localhost:5000/zv/GraphiQL](http://localhost:5000/zv/GraphiQL) and execute a GraphQL query like:
@@ -80,7 +80,7 @@ As mentioned in [`travis file`](./.travis.yml), some environment variables shoul
 
 ```bash
 # in /path/to/docker-certs directory
-node /path/to/WebAPI-Borzoo/scripts/deploy/travis-ci/gen-docker-certs.js
+node /path/to/WebAPI-Dabble/scripts/deploy/travis-ci/gen-docker-certs.js
 ```
 
 > This script assumes all Docker daemon certificate files are in one directory. Refer to [Ubuntu server setup file](./scripts/deploy/ubuntu-server-setup.md).
@@ -89,7 +89,7 @@ node /path/to/WebAPI-Borzoo/scripts/deploy/travis-ci/gen-docker-certs.js
 
 Docker Compose deploys multiple containers at the same time. (See [`docker-compose.yml`](./scripts/deploy/docker-compose.yml))
 
-- Web app ([borzoo.web](./scripts/deploy/Borzoo.Web.Dockerfile))
+- Web app ([borzoo.web](./scripts/deploy/Dabble.Web.Dockerfile))
 - Nginx web server
 
 #### Nginx Configurations

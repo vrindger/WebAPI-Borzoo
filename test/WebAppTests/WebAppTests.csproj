@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Borzoo.Web\Borzoo.Web.csproj" />
+    <ProjectReference Include="..\..\src\Dabble.Web\Dabble.Web.csproj" />
     <ProjectReference Include="..\Framework\Framework.csproj" />
   </ItemGroup>
 

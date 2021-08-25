@@ -7,8 +7,8 @@ services:
     ports:
       - 27017:27017
     networks:
-      - borzoo-network
+      - dabble-network
 
 networks:
-  borzoo-network:
+  dabble-network:
     driver: bridge

@@ -5,6 +5,41 @@ namespace WebAppTests
 {
     public static class TestData
     {
+        public static void SeedStatistics(IMongoDatabase db)
+        {
+            var statisticsCollection = db.GetCollection<BsonDocument>("Statistics");
+
+            statisticsCollection.InsertMany(new[]
+            {
+                BsonDocument.Parse(@"{
+                    Country: ""Albania"",
+                    Year: ""2000"",
+                    Area: 28748,
+                    Population: 3401198
+                }"),
+
+                BsonDocument.Parse(@"{
+                   Country: ""Albania"",
+                   Year: ""2001"",
+                   Area: 28748,
+                   Population: 3073734
+                }"),
+
+                BsonDocument.Parse(@"{
+                   Country: ""Albania"",
+                   Year: ""2002"",
+                   Area: 28748,
+                   Population: 3093465
+                }"),
+
+                BsonDocument.Parse(@"{
+                   Country: ""Albania"",
+                    Year: ""2003"",
+                    Area: 28748,
+                    Population: 3111162
+                }"),
+            });
+        }
         public static void SeedUsers(IMongoDatabase db)
         {
             var usersCollection = db.GetCollection<BsonDocument>("users");
